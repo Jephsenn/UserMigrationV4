@@ -1,5 +1,7 @@
 <h1 align="center">UserMigrationV4</h1>
 Welcome to the UserMigrationV4 script! This is a script designed to help IT technicians saving and restoring backups to and from MacOS devices. This script has the capability of saving data from a specified folder (typically the user folder) to another (can be on an external drive), and to restore data from a backup to their specified user folder (NetID). This script has several checks built into it, including confirming there is enough space on each destination directory, ensuring the machine is connected to power, and that both the source and destination directory exist. Additionally, this script will calculate progress during the transfer to give the technician a visual representation of how long to expect it to take. Pictured below is the GUI which the technician is prompted with, and some of the errors you may see while running the script.
+<br><br>
+This script saves and restores data using rsync. While saving data, the script will take the entire user folder and exclude 'Library/CloudStorage'. While restoring data, the script provides the technician the option to include standard library files or not, and will adjust the permissions of the transferred files.
 
 <h2 align="center">Initial GUI:</h2>
 <div align="center"><img width="712" alt="Screenshot 2024-06-11 at 1 47 21 PM" src="https://github.com/Jephsenn/UserMigrationV4/assets/77135997/92143c0c-d712-4eb8-bb5e-ab9a8e58f1b5"></div>
